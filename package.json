@@ -1,0 +1,30 @@
+{
+  "name": "TextSupport",
+  "version": "1.0.0",
+  "description": "Text Suport with Twilio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpsiepert/TextSupport.git"
+  },
+  "keywords": [
+    "text",
+    "support"
+  ],
+  "author": "Jennifer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpsiepert/TextSupport/issues"
+  },
+  "homepage": "https://github.com/jpsiepert/TextSupport",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.9.7",
+    "firebase": "^1.1.2",
+    "twilio": "^1.7.0"
+  }
+}

@@ -1,0 +1,18 @@
+
+<div>
+
+	From: <div ng-repeat="ticket in tickets">{{ticket.$id.replace("1", "")}}
+
+	<br/>
+
+		Messages: <div ng-repeat="(key, value) in ticket">{{value.body}}</div>
+		<button ng-click="showForm(ticket)">Reply</button>
+		<form ng-if="ticket.visible" ng-submit="sendText(ticket)">
+			<textarea ng-model="ticket.reply.text" rows="8" required></textarea>
+			<input type="submit" value="Send"/>
+		</form>
+		<b>{{ticket.reply.text}}</b>
+	</div>
+	<p ng-if="sent">{{sent}}</p>
+
+</div>
